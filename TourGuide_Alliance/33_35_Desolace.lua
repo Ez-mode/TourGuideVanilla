@@ -1,5 +1,5 @@
 
-TourGuide:RegisterGuide("Desolace (33-34)", "Stranglethorn Vale (36-37)", "Alliance", function()
+TourGuide:RegisterGuide("Desolace (33-35)", "Stranglethorn Vale (36-37)", "Alliance", function()
 return [[
 N This might be a good guide to skip |N|It's quite a bit out of the way, and there is a lot of running around the zone.|
 F Astranaar |N|Take the boat to Theramore Isle and fly up| |QID|1453|

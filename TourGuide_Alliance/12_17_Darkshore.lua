@@ -8,8 +8,15 @@ T Flight to Auberdine |R|Night Elf| |QID|6342|
 A Return to Nessa |R|Night Elf| |QID|6343|
 h Auberdine
 
+C The Shade of Elura |QID|1686| |C|Warrior| |N|Found by giant dead sea turtle (31,46)|
+
 F Rut'theran Village |R|Night Elf|
 T Return to Nessa |R|Night Elf| |QID|6343|
+
+T The Shade of Elura |QID|1686| |C|Warrior|
+A Smith Mathiel |QID|1692| |C|Warrior|
+T Smith Mathiel |QID|1692| |C|Warrior|
+
 F Auberdine |R|Night Elf|
 
 A For Love Eternal |N|On the docks, west of Inn| |QID|963|

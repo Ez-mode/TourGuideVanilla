@@ -1,4 +1,4 @@
-TourGuide:RegisterGuide("Hillsbrad Foothills (31-32)", "Desolace (33-34)", "Alliance", function()
+TourGuide:RegisterGuide("Hillsbrad Foothills (31-32)", "Desolace (33-35)", "Alliance", function()
 return [[
 R Refuge Pointe |N|In Arathi Highlands (44.5, 49.3)| |Z|Arathi Highlands| |QID|634|
 T Plea To The Alliance |NODEBUG| |QID|634|
