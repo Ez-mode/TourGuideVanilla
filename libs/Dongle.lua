@@ -515,7 +515,7 @@ local function printHelp(obj, method, header, frame, msg, a1,a2,a3,a4,a5,a6,a7,a
 	end
 
 	if select("#", a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20) > 0 then
-		msg = string.join(", ", {msg, argsToStrings(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)})
+		msg = TG.join(", ", {msg, argsToStrings(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20)})
 	end
 
 	frame:AddMessage(msg)

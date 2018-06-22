@@ -48,13 +48,7 @@ TourGuide.guidelistframe = frame
 frame:SetFrameStrata("DIALOG")
 frame:SetWidth(660) frame:SetHeight(320+28)
 frame:SetPoint("TOPRIGHT", TourGuide.statusframe, "BOTTOMRIGHT")
-frame:SetBackdrop({
-	bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-	edgeSize = 16,
-	insets = {left = 5, right = 5, top = 5, bottom = 5},
-	tile = true, tileSize = 16,
-})
+frame:SetBackdrop(ww.TooltipBorderBG)
 frame:SetBackdropColor(0.09, 0.09, 0.19, 1)
 frame:SetBackdropBorderColor(0.5, 0.5, 0.5, 0.5)
 frame:Hide()
@@ -105,7 +99,7 @@ frame:SetScript("OnShow", function()
 	local quad, vhalf, hhalf = TourGuide.GetQuadrant(TourGuide.statusframe)
 	local anchpoint = (vhalf == "TOP" and "BOTTOM" or "TOP")..hhalf
 	this:ClearAllPoints()
-	this:SetPoint(quad, TourGuide.statusframe, anchpoint)	
+	this:SetPoint(quad, TourGuide.statusframe, anchpoint)
 	TourGuide:UpdateGuideListPanel()
 	this:SetAlpha(0)
 	this:SetScript("OnUpdate", ww.FadeIn)

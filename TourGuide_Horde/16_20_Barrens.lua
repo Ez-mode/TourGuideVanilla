@@ -71,7 +71,7 @@ T Harpy Lieutenants |QID|875|
 A Serena Bloodfeather |QID|876|
 
 T Verog the Dervish |QID|851| |N|At the bunker to the west of the Crossroads (45.33, 28.45)|
-T Centaur Bracers |QID|855| |N|Skip Hezrul Bloodmark|
+T Centaur Bracers |QID|855| |S| |N|Skip "Hezrul Bloodmark"|
 
 C Serena Bloodfeather |N|Serena Bloodfeather - Northwest Barrens (38,11)| |QID|876|
 C Echeyakee |QID|881| |N|Located at (55.83, 17.08)|
@@ -96,8 +96,8 @@ C Consumed by Hatred |QID|899|
 A Weapons of Choice |QID|893| |N|Don't sell your Blood Shards|
 T Lakota'mani |QID|883|
 
-A The Ashenvale Hunt |O| |QID|6382| |N|If you are level 20 (45, 59)|
-A Melor Sends Word |O| |QID|1130| |N|If you are level 20|
+A The Ashenvale Hunt |QID|6382| |N|If you are level 20 (45, 59)|
+A Melor Sends Word |QID|1130| |N|If you are level 20|
 
 T Tribes at War |QID|878| |T|
 A Blood Shards of Agamaggan |QID|5052| |T|
@@ -114,8 +114,8 @@ A Hamuul Runetotem |QID|1489|
 N Almost leveled up |LV|20| |N|You should be 20, if not grind to get close|
 F Thunder Bluff
 
-T Melor Sends Word |QID|1130| |O|
-A Steelsnap |QID|1131| |O|
+T Melor Sends Word |QID|1130|
+A Steelsnap |QID|1131|
 A The Ashenvale Hunt |QID|1131| |N|(40, 59)|
 H The Crossroads
 

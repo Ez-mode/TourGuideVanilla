@@ -89,6 +89,12 @@ function TourGuide:QUEST_LOG_UPDATE(event)
 		for i=1,GetNumQuestLeaderBoards(qi) do
 			if GetQuestLogLeaderBoard(i, qi) == questtext then self:SetTurnedIn() end
 		end
+	elseif action == "COMPLETE" then
+		local skipNext = self:GetObjectiveTag("S")
+		if self.db.char.skipfollowups and skipNext and QuestFrame:IsVisible() then
+			CloseQuest()
+			TourGuide:Print(L["Automatically skipping the follow-up"])
+		end
 	end
 end
 

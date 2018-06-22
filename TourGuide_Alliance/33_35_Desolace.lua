@@ -10,7 +10,7 @@ T Reclaimers' Business in Desolace |T| |QID|1453|
 A Reagents for Reclaimers Inc. (Part 1) |T| |QID|1458|
 A The Karnitol Shipwreck (Part 1) |T| |QID|1454|
 h Nijel's Point |T| |QID|1440|
-T Brother Anton |T| |O| |QID|6141|
+T Brother Anton |T| |QID|6141|
 
 T Vahlarriel's Search (Part 1) |N|Find the chest in the broken down caravan to the west (56,17)| |QID|1437|
 A Vahlarriel's Search (Part 2) |QID|1465|
@@ -53,8 +53,8 @@ T Book of the Ancients |N|Back on shore at the tower| |QID|6027|
 C Reagents for Reclaimers Inc. (Part 2) |N|Get the last few reagents you need, you should have most by now.| |QID|1459|
 
 H Nijel's Point |QID|1440|
-T Reagents for Reclaimers Inc. (Part 2) |N|Skip the follow-up| |T| |QID|1459|
-T The Karnitol Shipwreck (Part 2) |N|Skip the follow-up| |T| |QID|1455|
+T Reagents for Reclaimers Inc. (Part 2) |S| |N|Skip the follow-up| |T| |QID|1459|
+T The Karnitol Shipwreck (Part 2) |S| |N|Skip the follow-up| |T| |QID|1455|
 T Centaur Bounty |T| |QID|1387|
 T Return to Vahlarriel |T| |QID|1440|
 ]]

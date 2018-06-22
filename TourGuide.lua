@@ -18,15 +18,16 @@ TourGuide.icons = setmetatable({
 	RUN = "Interface\\Icons\\Ability_Tracking",
 	MAP = "Interface\\Icons\\Ability_Spy",
 	FLY = "Interface\\Icons\\Ability_Rogue_Sprint",
-	SETHEARTH = "Interface\\AddOns\\TourGuide\\resting.tga",
+	SETHEARTH = "Interface\\AddOns\\TourGuideVanilla\\media\\resting.tga",
 	HEARTH = "Interface\\Icons\\INV_Misc_Rune_01",
 	NOTE = "Interface\\Icons\\INV_Misc_Note_01",
+	GRIND = "Interface\\Icons\\INV_Stone_GrindingStone_05",
 	USE = "Interface\\Icons\\INV_Misc_Bag_08",
 	BUY = "Interface\\Icons\\INV_Misc_Coin_01",
 	BOAT = "Interface\\Icons\\Ability_Druid_AquaticForm",
 	GETFLIGHTPOINT = "Interface\\Icons\\Ability_Hunter_EagleEye",
 	PET = "Interface\\Icons\\Ability_Hunter_BeastCall02",
-	DIE = "Interface\\AddOns\\TourGuide\\dead.tga",
+	DIE = "Interface\\AddOns\\TourGuideVanilla\\media\\dead.tga",
 }, {__index = function() return "Interface\\Icons\\INV_Misc_QuestionMark" end})
 
 
@@ -75,6 +76,7 @@ function TourGuide:Initialize()
 			showstatusframe = true,
 			showuseitem = true,
 			showuseitemcomplete = true,
+			skipfollowups = true,
 			petskills = {},
 		},
 	})
@@ -89,6 +91,7 @@ function TourGuide:Initialize()
 		self.initializeDone = true
 	end
 	self:PositionStatusFrame()
+	self:CreateConfigPanel()
 end
 
 
@@ -234,7 +237,7 @@ function TourGuide.ColorGradient(perc)
 	if perc >= 1 then return 0,1,0
 	elseif perc <= 0 then return 1,0,0 end
 
-	local segment, relperc = math.modf(perc*2)
+	local segment, relperc = TG.modf(perc*2)
 	local r1, g1, b1, r2, g2, b2 = select((segment*3)+1, 1,0,0, 1,0.82,0, 0,1,0)
 	return r1 + (r2-r1)*relperc, g1 + (g2-g1)*relperc, b1 + (b2-b1)*relperc
 end
@@ -244,7 +247,7 @@ function TourGuide.GetQuadrant(frame)
 	if not x or not y then return "BOTTOMLEFT", "BOTTOM", "LEFT" end
 	local hhalf = (x > UIParent:GetWidth()/2) and "RIGHT" or "LEFT"
 	local vhalf = (y > UIParent:GetHeight()/2) and "TOP" or "BOTTOM"
-	return vhalf..hhalf, vhalf, hhalf	
+	return vhalf..hhalf, vhalf, hhalf
 end
 
 function TourGuide.GetUIParentAnchor(frame)

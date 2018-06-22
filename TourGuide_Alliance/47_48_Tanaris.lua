@@ -21,7 +21,7 @@ N If you find Tooga... |QID|1560| |N|Accept his quest. He'll follow you, so you 
 C Noxious Lair Investigation |N|At the Noxious Lair (34,46)| |QID|82|
 T Tooga's Quest |O| |QID|1560|
 A Yuka Screwspigot |QID|4324| |N|Back at Steamwheedle Port|
-T Screecher Spirits |N|Skip the follow-up| |QID|3520|
+T Screecher Spirits |S| |N|Skip the follow-up| |QID|3520|
 
 T The Thirsty Goblin |QID|2605| |N|Back at Gadgetzan|
 A In Good Taste |QID|2606|
@@ -37,7 +37,7 @@ C The Scrimshank Redemption |N|To the south at The Gaping Chasm (55,70), go to t
 
 A Find OOX-17/TN! |O| |QID|351|
 T OOX-17/TN Distress Beacon |O| |N|Up in the hills north on the silithid at (60,64)| |QID|351|
-A Rescue OOX-17/TN! |O| |QID|648|
+A Rescue OOX-17/TN! |O| |PRE|Find OOX-17/TN!| |QID|648|
 C Rescue OOX-17/TN! |O| |QID|648|
 
 H Gadgetzan |QID|113|
